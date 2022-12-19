@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-background">
+        <h1 id="title" class="register-title">Register</h1>
+        <p id="description">Please fill all required fields.</p>
+        <form id="survey-form" action="" class="form" method="post">
+          <div class="input-group">
+            <label class="form-label" id="name-label">Name</label>
+            <input id="name" type="text" name="name" class="input" placeholder="Name" required />
+          </div>
+          <div class="input-group">
+            <label class="form-label" id="email-label">Email</label>
+            <input id="email" type="email" name="email" class="input" placeholder="yourname@gmail.com" required />
+          </div>
+          <div class="input-group">
+            <label class="form-label" id="number-label">Age</label>
+            <input id="number" type="number" class="input" name="age" min="13" max="120"  placeholder="Age" />
+          </div>
+          <div class="input-group">
+            <label class="form-label">Please select your country</label>
+            <select id="dropdown" class="input">
+              <option> --select-- </option>
+              <option> India </option>
+              <option> USA </option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label class="form-label">Would you recommend our plactform to a friend?</label>
+            <label for="definitely"><input id="definitely" type="radio" name="account-type" value="definitely"/> Definitely</label>
+            <label for="maybe"><input id="maybe" value="maybe" type="radio" name="account-type" /> Maybe</label>
+            <label for="not-sure"><input id="not-sure" value="not-sure" type="radio" name="account-type" /> Not sure</label>
+          </div>
+          <div class="input-group">
+            <label class="form-label">What is your favorite language (Check all that apply)</label>
+            <label for="html"><input id="html" value="1" type="checkbox" name="html" /> HTML</label>
+            <label for="css"><input id="css" value="2" type="checkbox" name="css" /> css</label>
+            <label for="js"><input id="js" value="3" type="checkbox" name="js" /> Java Script</label>
+          </div>
+
+          <div class="input-group">
+            <label class="form-label">Ask somthing ?</label>
+            <textarea placeholder="Enter your meassage here..." class="input"></textarea>
+
+          </div>
+          
+          <button id="submit" type="submit" class="btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

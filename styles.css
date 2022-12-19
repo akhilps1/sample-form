@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --primary-color: 200, 100%, 50%;
+  --primary-dark: 200, 100%, 6%;
+  --primary-light: 200, 100%, 91%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 20px 0 20px 0;
+  background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.form-background {
+  padding: 40px 40px;
+  background-color: hsl(var(--primary-dark), 0.7);
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 15px 0 hsl(var(--primary-dark));
+  border-radius: 20px;
+  color: hsl(0, 0%, 87%);
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register-title {
+  text-align: center;
+  font-weight: normal;
+}
+.input {
+  background-color: hsl(var(--primary-light), 0.3);
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: hsl(0, 0%, 87%);
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+}
+.input:focus,
+.input:hover {
+  outline: 2px solid hsl(var(--primary-color), 0.8);
+}
+.btn-submit {
+  background-color: hsl(var(--primary-color), 0.2);
+  outline: none;
+  border: none;
+  padding: 8px 0;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 67%);
+  cursor: pointer;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: hsl(var(--primary-color), 0.3);
+  color: hsl(0, 0%, 87%);
+}
+.form-label {
+  color: hsl(0, 0%, 67%);
+}
